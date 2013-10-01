@@ -1,0 +1,121 @@
+/* These styles just pretty up the page a bit. */
+body {
+   font: 62.5%/1.2 Arial, Helvetica, sans-serif;
+   background-color: #eee; }
+
+/* These styles create the dropdown menus. */
+#navbar {
+   margin: 0;
+   padding: 0;
+   height: 5em; }
+#navbar li {
+	border:1px solid #fff;
+   list-style: none;
+   font-size:11px;
+   font-weight:bold;
+   float: left; }
+#navbar li a {
+   display: block;
+   padding: 6px 28px;
+   background-color:#808080;
+   width: 11em;
+   color: #fff;
+   text-decoration: none; }
+#navbar li ul {
+   display: none; 
+   width: 11em; /* Width to help Opera out */
+   background-color: #69f;}
+#navbar li:hover ul, #navbar li.hover ul {
+   display: block;
+   position: absolute;
+   margin: 0;
+   padding: 0; }
+#navbar li:hover li, #navbar li.hover li {
+   float: none; }
+#navbar li:hover li a, #navbar li.hover li a {
+   background-color: #808080;
+   border-bottom: 1px solid #fff;
+   color: #fff; }
+#navbar li li a:hover {
+   background-color:#000000; }
+   
+#navbar1 {
+   margin: 0;
+   padding: 0;
+   height: 5em; }
+#navbar1 li {
+   border:1px solid #fff;
+   list-style: none;
+   font-size:11px;
+   font-weight:bold;
+   float: left; 
+   display: block;
+   padding: 6px 28px;
+   background-color:#F9F9F9;
+   width: 11em;
+   color: #000;
+   text-decoration: none;
+   
+   }      
+   
+#navigation {font-size:0.75em; width:150px;}
+#navigation ul {margin:0px; padding:0px;}
+#navigation li {list-style: none;} 
+
+ul.top-level {background:#666;}
+ul.top-level li {
+ border-bottom: #fff solid;
+ border-top: #fff solid;
+ border-width: 1px;
+}
+
+#navigation a {
+ color: #fff;
+ cursor: pointer;
+ display:block;
+ height:25px;
+ line-height: 25px;
+ text-indent: 10px;
+ text-decoration:none;
+ width:100%;
+}
+#navigation a:hover{
+ text-decoration:underline;
+}
+
+#navigation li:hover {
+ /*background: #f90;*/
+ position: relative;
+}
+ul.sub-level {
+    display: none;
+}
+ul.sub-level {
+    display: none;
+}
+li:hover .sub-level {
+    background: #999;
+    border: #fff solid;
+    border-width: 1px;
+    display: block;
+    position: absolute;
+    left: 75px;
+    top: 5px;
+}
+ul.sub-level {
+    display: none;
+}
+li:hover .sub-level {
+    background: #999;
+    border: #fff solid;
+    border-width: 1px;
+    display: block;
+    position: absolute;
+    left: 75px;
+    top: 5px;
+}
+ul.sub-level li {
+    border: none;
+    float:left;
+    width:150px;
+}

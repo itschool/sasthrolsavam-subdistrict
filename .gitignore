@@ -1,0 +1,8 @@
+nbproject
+application/config/database.php
+dbBackup
+uploads
+*.sql
+*.log
+*~
+*.swp
