@@ -1,0 +1,33 @@
+# .editorconfig
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.markdown]
+indent_size= 4
+trim_trailing_whitespace = false
+
+[*.{js,php,py,rst,ini}]
+indent_size = 4
+indent_style = space
+
+[*.yml]
+indent_style = space
+indent_size = 2
+
+[**.bat]
+end_of_line = crlf
+
+[**.rb]
+indent_style = space
+indent_size = 2
+
+[*.css]
+indent_style = space
+indent_size = 2
