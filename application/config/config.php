@@ -14,18 +14,7 @@
 | path to your installation.
 |
 */
-$isHTTPS	=	(isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on");
-$port		=	(isset($_SERVER["SERVER_PORT"]) && ((!$isHTTPS && $_SERVER["SERVER_PORT"] != "80") || ($isHTTPS && $_SERVER["SERVER_PORT"] != "443")));
-$port		=	($port) ? ':'.$_SERVER["SERVER_PORT"] : '';
-$url		=	($isHTTPS ? 'https://' : 'http://').$_SERVER["SERVER_NAME"].$port;
-
-$config['base_url']		=   $url.'/sciencefair_subdistrict2013/';
-$config['base_path']	=	getenv("DOCUMENT_ROOT").'/sciencefair_subdistrict2013/';
-
-
-if(!defined('_DOCUMENT_ROOT')) define('_DOCUMENT_ROOT', $config['base_path']);
-
-
+$config['base_url']		=  '';
 /*
 |--------------------------------------------------------------------------
 | Index File
