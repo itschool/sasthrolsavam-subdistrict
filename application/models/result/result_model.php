@@ -27,9 +27,9 @@ class Result_Model extends CI_Model{
 		//echo "<br />".$festid;
 		$cmbFairType	=	4;
 		$limit	=	$this->exhibition_category($cmbFairType,$festid);
-		$this->db->select('SM.*,PD.* ', FALSE);
+		$this->db->select('PD.* ', FALSE);
 		$this->db->from('school_details AS S');	
-		$this->db->join('ground_item_master AS SM','S.school_code = SM.item_code');
+		//$this->db->join('ground_item_master AS SM','SM.item_code = PD.item_code');
 		$this->db->join('participant_item_details AS PD','S.school_code = PD.school_code AND PD.fest_id=0 AND PD.is_captain=\'Y\' AND PD.is_absent = 0 AND PD.code_confirmed=1');				
 		$this->db->where($limit); 
 		$item_details		=	$this->db->get();
@@ -75,9 +75,9 @@ class Result_Model extends CI_Model{
 		$cmbFairType	=	4;
 		$limit	=	$this->exhibition_category($cmbFairType,$festid);
 		$this->db->select('PID.*');
-		$this->db->from('school_details AS S');
-		$this->db->join('ground_item_master AS SM',"S.school_code = SM.item_code");
+		$this->db->from('school_details AS S');		
 		$this->db->join('participant_item_details AS PID',"S.school_code = PID.school_code");
+//$this->db->join('ground_item_master AS SM',"SM.item_code = PID.item_code");
 		$this->db->where('PID.is_captain','Y');
 		$this->db->where('PID.is_absent','0');
 		$this->db->where('PID.fest_id','0');
