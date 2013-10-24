@@ -223,12 +223,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-<<<<<<< HEAD:application/config/config.php
-$config['encryption_key'] = 'sciencefair2011';
-=======
 $config['encryption_key'] = '';
->>>>>>> 653f44b62a54a514ae0430712c86b4c58833c351:application/config/config.php.example
-
 /*
 |--------------------------------------------------------------------------
 | Session Variables
