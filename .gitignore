@@ -1,5 +1,6 @@
 nbproject
 application/config/database.php
+application/config/config.php
 dbBackup
 uploads
 *.sql
